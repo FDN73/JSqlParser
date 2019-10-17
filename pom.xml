@@ -366,7 +366,9 @@
                         <configuration>
                             <logViolationsToConsole>true</logViolationsToConsole>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                            <sourceDirectories>${project.build.sourceDirectory}</sourceDirectories>
+                            <sourceDirectories>
+				<sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+				</sourceDirectories>
                             <checkstyleRules>
                                 <module name="Checker">
                                     <module name="SuppressWarningsFilter" />
